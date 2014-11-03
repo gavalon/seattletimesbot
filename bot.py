@@ -1,8 +1,4 @@
-import praw
-import urllib
-import time
-import re
-import pickle
+import praw, urllib, time, re, pickle
 from urllib import urlopen
 
 # Authenticate praw, the Reddit API
@@ -12,8 +8,6 @@ r.login()
 
 #So I don't repost links
 posted_links = []
-
-
 
 while True:
 	f = urllib.urlopen('http://seattletimes.com/html/localnews/')
